@@ -1,0 +1,23 @@
+{
+  "name": "prueba-sd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axeljzx/Pagina-Laboratorio01-Sistema-Distribuidos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axeljzx/Pagina-Laboratorio01-Sistema-Distribuidos/issues"
+  },
+  "homepage": "https://github.com/axeljzx/Pagina-Laboratorio01-Sistema-Distribuidos#readme",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
+}
