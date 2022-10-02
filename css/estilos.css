@@ -1,0 +1,167 @@
+:root{
+    --fuente:'PT Sans',sans-serif;;
+    --rojo: #dc3545;
+    --blanco: #fff;
+    --negro : #090909;
+    --amarillo: #fef46d7e;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /*1rem=10px */
+}
+body{
+    font-family: var(--fuente);
+    background-color: #F1F1F1;
+}
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    /* padding: 2rem; */
+    /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; */
+}
+
+.header{
+    padding: 2rem;
+    background-color: var(--negro);
+}
+.contenedor-header{
+   text-align: center;
+ }
+@media (min-width: 768px) {
+    .contenedor-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+}
+
+.header-titulo{
+    font-size: 3.2rem;
+    color: var(--blanco);
+}
+.navegacion-principal{
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        display: block;
+    }
+}
+.enlace{
+     font-size: 2rem;
+     color: var(--blanco);
+     font-size: bold;
+}
+.enlace:hover{
+    color: var(--amarillo);
+}
+
+.mobile{
+    border: 0.5px solid var(--blanco);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+.mobile img{
+    width: 2rem;
+    
+}
+@media (min-width: 768px) {
+    .mobile{
+       display: none;
+    }
+}
+
+.mostrar{
+    display: block;
+}
+
+.principal{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../image/Sistemas-Distribuidos-P2P-IUTA-UAH.jpg");
+    height: 70rem;
+   /* Created with https://www.css-gradient.com */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-principal{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;  
+}
+.principal-titulo{
+    font-size: 6rem;
+    color: var(--blanco);
+}
+.principal-parrafo{
+    color: var(--blanco);
+    font-size: 4rem;
+}
+
+.contenedor-integrantes{
+    text-align: center;
+}
+
+.integrantes-titulo{
+    margin: 4rem 0 5rem 0;
+    font-size: 3rem;
+}
+
+.lista-integrantes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.integrantes{
+    margin-bottom: 3rem;
+}
+
+.integrante{
+    font-size: 2rem;
+}
+.integrante span{
+    font-weight: bold;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding: 3rem 0;
+}
+
+.footer p{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    .barra-fija{
+        left: 0;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0.2rem 0.3rem 0.3rem  rgb(51, 51, 51);
+    }
+    
+    .body-scroll{
+        padding-top: 8.6rem;
+    }
+}
+
