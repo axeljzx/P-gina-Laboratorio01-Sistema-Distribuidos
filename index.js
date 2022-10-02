@@ -11,7 +11,7 @@ app.get("/",(req,res)=>{
 //         res.sendFile(__dirname+"/public/index.html");
 //  });
 
-const PORT=80;
+const PORT=3000;
 app.listen(PORT,()=>{
     console.log(`Corriendo en el puerto ${PORT}`);
 });
